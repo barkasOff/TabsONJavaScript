@@ -1,4 +1,5 @@
 import getDataJSON from './getDataJSON';
+import modal from './modal';
 
 const   whyWeLoveSeasons = () => {
     class CardsForSeasons {
@@ -37,7 +38,7 @@ const   whyWeLoveSeasons = () => {
                     '.whyWeLoveSeasons__seasons').render();
             });
         })
-        .catch(error => console.log(error));
+        .catch(error => modal(error));
 };
 
 export default whyWeLoveSeasons;
