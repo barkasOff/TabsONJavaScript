@@ -1,11 +1,7 @@
 'use strict';
 
-window.addEventListener('DOMContentLoaded', () => {
-    const   tabs = document.querySelectorAll('.seasons__photo');
+import seasons from './modules/seasons';
 
-    tabs.forEach((item, i) => {
-        if (i != 0) {
-            item.classList.add('hide');
-        }
-    });
+window.addEventListener('DOMContentLoaded', () => {
+    seasons();
 });
