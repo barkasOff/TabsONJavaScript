@@ -1,5 +1,5 @@
 .whyWeLoveSeasons {
-    margin: 50px 0;
+    margin: 35px 0;
     &__seasons {
         display: flex;
         justify-content: space-between;
@@ -9,6 +9,7 @@
         height: 450px;
         width: 250px;
         box-shadow: 0 4px 30px rgba(0,0,0,.25);
+        margin-top: 15px;
     }
     &__question {
         padding: 5px;
