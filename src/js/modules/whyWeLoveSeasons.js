@@ -1,3 +1,5 @@
+import getDataJSON from './getDataJSON';
+
 const   whyWeLoveSeasons = () => {
     class CardsForSeasons {
         constructor(src, alt, ques, reas, parent, ...classes) {
@@ -27,30 +29,15 @@ const   whyWeLoveSeasons = () => {
             this.parent.append(card);
         }
     }
-    new CardsForSeasons(
-        'img/summer.jpg',
-        'summer',
-        'Почему мы любим лето?',
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo id dolorem enim facilis? Accusamus cum eos sint cumque deleniti modi, debitis eaque sunt nobis maxime. Amet praesentium cum in accusantium?',
-        '.whyWeLoveSeasons__seasons').render();
-    new CardsForSeasons(
-        'img/autumn.jpg',
-        'autumn',
-        'Почему мы любим осень?',
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo id dolorem enim facilis? Accusamus cum eos sint cumque deleniti modi, debitis eaque sunt nobis maxime. Amet praesentium cum in accusantium?',
-        '.whyWeLoveSeasons__seasons').render();
-    new CardsForSeasons(
-        'img/winter.jpg',
-        'winter',
-        'Почему мы любим зиму?',
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo id dolorem enim facilis? Accusamus cum eos sint cumque deleniti modi, debitis eaque sunt nobis maxime. Amet praesentium cum in accusantium?',
-        '.whyWeLoveSeasons__seasons').render();
-    new CardsForSeasons(
-        'img/spring.jpg',
-        'spring',
-        'Почему мы любим весну?',
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo id dolorem enim facilis? Accusamus cum eos sint cumque deleniti modi, debitis eaque sunt nobis maxime. Amet praesentium cum in accusantium?',
-        '.whyWeLoveSeasons__seasons').render();
+
+    getDataJSON('http://localhost:3000/WhyWeLoveSeasons')
+        .then(data => {
+            data.forEach(({src, alt, ques, reas}) => {
+                new CardsForSeasons(src, alt, ques, reas,
+                    '.whyWeLoveSeasons__seasons').render();
+            });
+        })
+        .catch(error => console.log(error));
 };
 
 export default whyWeLoveSeasons;

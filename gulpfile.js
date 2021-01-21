@@ -15,7 +15,7 @@ gulp.task('server', () => {
         server: {
             baseDir: 'src'
         }
-    });    
+    });
     gulp.watch("src/*.html").on('change', browserSync.reload);
 });
 
@@ -41,4 +41,4 @@ gulp.task('wpack', () => {
         .pipe(browserSync.stream());
 });
 
-gulp.task('default', gulp.parallel('watch', 'server', 'wpack','styles'));
+gulp.task('default', gulp.parallel('watch', 'server', 'wpack', 'styles'));

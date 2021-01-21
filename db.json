@@ -1,0 +1,31 @@
+{
+    "WhyWeLoveSeasons": [
+        {
+            "src": "img/summer.jpg",
+            "alt": "summer",
+            "ques": "Почему мы любим лето?",
+            "reas": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo id dolorem enim facilis? Accusamus cum eos sint cumque deleniti modi, debitis eaque sunt nobis maxime. Amet praesentium cum in accusantium?"
+        },
+        {
+            "src": "img/autumn.jpg",
+            "alt": "autumn",
+            "ques": "Почему мы любим осень?",
+            "reas": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo id dolorem enim facilis? Accusamus cum eos sint cumque deleniti modi, debitis eaque sunt nobis maxime. Amet praesentium cum in accusantium?"
+        },
+        {
+            "src": "img/winter.jpg",
+            "alt": "winter",
+            "ques": "Почему мы любим зиму?",
+            "reas": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo id dolorem enim facilis? Accusamus cum eos sint cumque deleniti modi, debitis eaque sunt nobis maxime. Amet praesentium cum in accusantium?"
+        },
+        {
+            "src": "img/spring.jpg",
+            "alt": "spring",
+            "ques": "Почему мы любим весну?",
+            "reas": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo id dolorem enim facilis? Accusamus cum eos sint cumque deleniti modi, debitis eaque sunt nobis maxime. Amet praesentium cum in accusantium?"
+        }
+    ],
+    "requests": [
+        
+    ]
+}
